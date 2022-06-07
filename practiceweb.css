@@ -1,0 +1,1152 @@
+
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+html{
+  scroll-behaviour: smooth;
+}
+
+a{
+  text-decoration: none; 
+  cursor: pointer;
+  color: black;
+}
+
+li{
+  list-style: none;
+}
+
+button{
+  padding: 0.6rem 1rem; 
+  border-radius: 0.8rem;
+  outline: none; 
+  line-height: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#con{
+  display: none;
+  position: sticky;
+}
+
+.form-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 13;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0, 0.5);
+}
+
+.signup-form{
+  width: 26rem;
+  height: 85%;
+  background-color: #99adc2;
+  position: relative;
+  padding: 3rem;
+  display: flex;
+  box-shadow: 0rem 0.4rem 2rem 0.1rem rgba(35, 52, 53, 0.25);
+  flex-flow: column;
+  transition: all 0.5s ease;
+}
+
+.form-container .signup-form .closetab{
+
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: auto;
+\
+}
+
+.form-container .signup-form .closetab a{
+  float: right;
+  margin-right: -3rem;
+  cursor: pointer;
+}
+
+.form-container .signup-form .closetab a img{
+  width: 2rem;
+  height: 2rem;
+}
+
+.form-container .signup-form .form-head{
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: -1.5rem;
+  font-size: 1.2rem;
+}
+
+.form-container .signup-form .form-fill label{
+  font-size: 0.7rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-container .signup-form .form-fill input{
+  width: 100%;
+  margin-bottom: 1.8rem;
+  height: 1.6rem;
+  border-radius: 0.3rem;
+  padding: 0 0.5rem;
+}
+
+#logc{
+  display: none;
+}
+
+.subm{
+  margin: auto;
+}
+
+/*----------------------------------our header style-------------------------*/
+
+header{
+  padding: 0 3rem;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 8rem;
+  align-items: center;
+}
+
+header nav .left-side .my-logo a img{
+  width: 5rem;
+  height: 3rem;
+}
+
+header nav .left-side{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+
+}
+
+header nav .left-side .sub-menu{
+  display: flex;
+  height: inherit;
+}
+
+header nav .left-side .sub-menu a{
+  margin-right: 1.2rem;
+}
+
+header nav .left-side .sub-menu a li{
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  transition: all 0.2s;
+}
+
+header nav .left-side .sub-menu a li:hover{
+  color: #cbc7fc;
+}
+
+/*----------------------------------our header right side style-------------------------*/
+
+header nav .right-side{
+  display: flex;
+  width: 50%; 
+}
+
+header nav .right-side .right-sub-menu{ 
+  margin-right: 2rem;
+  width: 100%;
+  height: inherit; 
+  display: flex; 
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav .right-side .right-sub-menu a{
+  margin-right: 2rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #e6e6ff;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 9;
+}
+
+header nav .right-side .right-sub-menu button{
+  background-color: #acaefc;
+  color: black;
+  position: relative;
+  z-index: 9;
+}
+
+header nav .right-side .right-sub-menu button:hover{
+  background-color: #9497ff;
+}
+
+/*----------------------------------our main and left side style-------------------------*/
+
+.main-content{
+  padding: 0 5rem;
+  margin-top: 1.7rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content .main-left-side h1{
+  widht: 0.1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-size: 2.7rem;
+}
+
+.main-content .main-left-side p{
+  width: 22rem;
+  margin-bottom: 1.7rem;
+  font-size: 1.2rem;
+  text-transform: lowercase;
+  line-height: 1.3rem;
+}
+
+.main-content .main-left-side .btn-group{
+  display: flex;
+}
+
+.main-content .main-left-side .btn-group a img{
+  height: 2.4rem;
+  width: 8rem;
+}
+
+.main-content .main-left-side .btn-group .appstore{
+  height: 4.9rem;
+  margin-top: -1.3rem;
+}
+
+.main-content .main-left-side .btn-group a:first-child{
+  margin-right: 1.7rem;
+}
+
+/*----------------------------------our right side style-------------------------*/
+
+
+.main-content .main-right-side{
+  width: 50%;
+  padding-right: 1rem;
+  height: 100vh;
+  background-color: #f7fdff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 34rem 0rem 34rem 20rem;
+}
+
+.main-content .main-right-side img{
+  width: 28rem;
+}
+
+/*----------------------------------our second main side style-------------------------*/
+
+.common-section{
+  padding: 0 5rem;
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.common-section .left-section{
+  width: inherit;
+  height: inherit;
+
+}
+
+.common-section .left-section figure{
+  width: 10rem;
+  height: 28rem;
+  margin-top: 1rem;
+  background-color: #f2fcff;
+  border-radius: 2rem;
+}
+
+.common-section .left-section figure img{
+  width: 26rem;
+  height: 27rem;
+}
+
+.common-section .right-section{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  padding-left: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.common-section .right-section h2{
+  width: 14rem;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 2.3rem;
+  margin-bottom: 0.8rem;
+  text-transform: capitalize;
+}
+
+.common-section .right-section p{
+  width: 20rem;
+  line-height: 1.5rem;
+  text-transform: lowercase;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.common-section .right-section .btn-group .common-button{
+  padding: 0.7rem 1.4rem;
+  background-color: #9497ff;
+  color: #fff;
+  margin-right: 0.7rem;
+}
+
+.common-section .right-section .btn-group .common-button:hover{
+  color: black;
+  background-color: #fff;
+}
+
+.common-section .right-section button:last-child{
+  background-color: transparent;
+  color: black;
+  padding: 0.7rem 1.1rem;
+}
+
+.common-section .right-section button:last-child:hover{
+  background-color: #9497ff;
+  color: #fff;
+}
+
+/*----------------------------------our third main side style-------------------------*/
+
+.third-s{
+  width: 100%;
+  height: 29rem;
+  padding: 2rem 4rem; 
+  margin-top: 5rem;
+  background-color: #f2fcff;
+}
+
+.third-s .heading h2{
+  
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  text-transform: capitalize;
+}
+
+.third-s p{
+  width: 20rem;
+  height: 4rem;
+  text-align: center;
+  margin: auto;
+  font-size: 1rem;
+  text-transform: lowercase;
+}
+
+.third-s .task-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.third-s .task-container p{
+    width: 15rem;
+}
+
+.third-s .task-container .task-1,
+.third-s .task-container .task-2,
+.third-s .task-container .task-3{
+    padding: 2rem 0.4rem 0.4rem 0.4rem;
+    text-align: center;
+    transition: all 0.3s linear; 
+    border-radius: 1rem;
+}
+
+.third-s .task-container .task-1 img,
+.third-s .task-container .task-2 img,
+.third-s .task-container .task-3 img{
+    width: 9rem;
+    height: 9rem;
+    margin--bottom: 0.3rem;s
+}
+
+.third-s .task-container .task-1:hover,
+.third-s .task-container .task-2:hover,
+.third-s .task-container .task-3:hover{
+    box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+    background-color: #fff;
+}
+
+.third-s .task-container .task-1:hover > img,
+.third-s .task-container .task-2:hover > img,
+.third-s .task-container .task-3:hover > img{
+    transform: rotate(360deg);
+}
+
+/*----------------------------------our fourth main side style-------------------------*/
+
+#fourth-sec{
+    margin-top: 6rem;
+}
+
+#fourth-sec .left-section{
+    width: inherit;
+    height: inherit;
+}
+
+#fourth-sec .left-section img{
+    width: 32rem;
+    height: 25rem;
+}
+
+/*----------------------------------our fifth main side style-------------------------*/
+
+#fifth-sec{
+    margin-top: 0.8rem;
+}
+
+#fifth-sec .left-section img{
+    height: 27rem;
+    width: 22rem;
+}
+
+/*----------------------------------our footer main side style-------------------------*/
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 3rem 5rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #def2fc;
+}
+
+footer .logo-div{
+    width: 30vw;
+    margin-top: -1rem;
+}
+
+footer .logo-div p{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+footer .logo-div img{
+    width: 4rem;
+    height: 2rem;
+}
+
+footer #divs-menu{
+    width: 70vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+
+footer #divs-menu .div-1-menu,
+footer #divs-menu .div-2-menu,
+footer #divs-menu .div-3-menu{
+    margin-left: 3rem;
+}
+
+footer #divs-menu .div-1-menu h4,
+footer #divs-menu .div-2-menu h4,
+footer #divs-menu .div-3-menu h4{
+    font-size: 1.2rem;
+    width: 5rem;
+    text-transform: capitalize;
+    margin-bottom: 0.3rem;
+}
+
+footer #divs-menu .div-1-menu a li,
+footer #divs-menu .div-2-menu a li,
+footer #divs-menu .div-3-menu a li{
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.copyright-s{
+    display: block;
+}
+
+/*----------------------------------media query for responsiveness-------------------------*/
+
+
+@media (max-width: 770px){
+   
+   body{
+      background-color: aqua;
+  }
+   header, .main-content, .common-section {
+      padding: 0 1rem;
+  }
+   header nav .right-side{
+
+
+  }
+   .main-content{
+      display: flex;
+      width: 100%;
+      height: 80vh;
+      flex-flow: column;
+  }
+   .main-content .main-left-side{
+      order: 2;
+      width: 100%;
+}
+   .main-content .main-right-side{
+      background-color: transparent;
+      order: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+  }
+   .main-content .main-right-side img{
+      width: 28rem;
+      height: 20rem;
+      margin: 0;
+      margin-top: 9rem;
+  }
+   header nav{
+      padding-top: 0.3rem;
+      display: flex; 
+      flex-flow: column;
+      align-items: flex-start;
+  }
+   header nav .left-side{
+      display: block;
+      width: 100%;
+      order: 2;
+  }
+   header nav .left-side img{
+      display: block;
+      width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

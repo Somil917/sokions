@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>practice web</title>
+     <meta charset="utf-8">
+     <meta name="viewport" conten="width-device-width", initial-scale="1.0">
+     <link rel="stylesheet" href="practiceweb.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+         <div class="left-side">
+             <div class="my-logo">
+               <a href="#">
+                 <img src="tglogopl.png" alt="logo">
+               </a>
+             </div>
+             <div class="sub-menu">
+               <a href="#"><li>Home</li></a>
+               <a href="#"><li>About US</li></a>
+               <a href="#"><li>Services</li></a>
+               <a href="#"><li>Contact US</li></a>
+             </div>
+         </div>
+         <div class="right-side">
+            <div class="right-sub-menu">
+               <a href="#" id="btn1"><li>Log In</li></a>
+               <button id="butn" onclick="toggleshow()">Sign Up</button>
+            </div>
+         </div>
+      </nav>
+    </header>
+    <div  id="con">
+    <div class="form-container">
+    <div class="signup-form" id="frm">
+       <div class="closetab">
+       <a href="#" id="closecross"><img src="cross.png" alt="close"></a>
+       </div>
+       <div class="form-head">
+       <h2>SignUp</h2>
+       </div>
+       <div class="form-fill">
+       <label>Name</label><br>
+       <input type="text" placeholder="write your name" id="nm"></input><br>
+       <label>Email Id</label><br>
+       <input type="email" placeholder="Enter E-mail Id" id="em"></input><br>
+       <label>Password</label><br>
+       <input type="password" placeholder="make a password" id="psw"></input><br>
+       <label>Confirm-Password</label><br>
+       <input type="password" placeholder="confirm password" id="pswr"></input><br>
+       </div>
+       <div class="subm">
+         <button type="submit" onclick="userData()" id="add">SignUp</button>
+       </div>
+    </div>
+    </div>
+    </div>
+  
+    <div  id="logc">
+    <div class="form-container">
+    <div class="signup-form">
+       <div class="closetab">
+       <a href="#" id="closecross1"><img src="cross.png" alt="close"></a>
+       </div>
+       <div class="form-head">
+       <h2>Login</h2>
+       </div>
+       <div class="form-fill">
+       <label>Email Id</label><br>
+       <input type="email" placeholder="Enter E-mail Id"></input><br>
+       <label>Password</label><br>
+       <input type="password" placeholder="make a password"></input>
+       </div>
+       <div class="subm">
+         <button type="submit" id="add2">Login</button>
+       </div>
+    </div>
+    </div>
+    </div>
+   <!--------------------------main section------------------------------>
+    <section class="main-content">
+       <div class="main-left-side">
+         <h1>Healthy Living<br>Simplified</h1>
+         <p>somil is a healthy person in their own mindset 
+           it wants to be fit not to be muscular yes it is a fact that 
+           it just want a fit body </p>
+         <div class="btn-group">
+            <a><img src="appstore.png" alt="appstore" class="appstore"></a>
+            <a><img src="playstore.png" alt="playstore"></a>
+         </div>
+       </div>
+       <div class="main-right-side">
+        <img src="doctormalep.png" alt="doctor image">
+       </div>
+    </section>
+    <!--------------------------main second section------------------------------>
+    <section class="common-section" id="second-sec">
+       <div class="left-section">
+         <figure>
+         <img src="fitness.png" alt="fitnessapp">
+         </figure>
+       </div>
+       <div class="right-section">
+         <h2>Your Daily Healthy App</h2>
+         <p>somil is a healthy person in their own mindset 
+           it wants to be fit not to be muscular yes it is a fact that 
+           </p>
+         <div class="btn-group">
+           <button class="common-button">Get started</button>
+           <button class="common-button-normal">How It Works?</button>
+         </div>
+       </div>
+    </section>
+    <!--------------------------main third section------------------------------>
+    <section class="third-s">
+        <div class="heading">
+           <h2>The Tools For Your Goals</h2>
+           <p>It is a good practice for a health concious 
+             person even if you are not a problem</p>
+        </div>
+        <div class="task-container">
+        <div class="task-1">
+           <img src="table.png" alt="img-1">
+           <h3>Learn And Grow</h3>
+           <p>It is a good practice for a health concious 
+             person even </p>
+        </div>
+        <div class="task-2">
+           <img src="clock.png" alt="img-2">
+           <h3>Time Management</h3>
+           <p>It is a good practice for a health concious 
+             person even </p>
+        </div>
+        <div class="task-3">
+          <img src="dumbel.png" alt="img-3">
+           <h3>Stay Motivated</h3>
+           <p>It is a good practice for a health concious 
+             person even</p>
+        </div>
+      </div>
+    </section>
+     <!--------------------------main fourth section------------------------------>
+    <section class="common-section" id="fourth-sec">
+       <div class="right-section">
+         <h2>Create Your Fitness Journey</h2>
+         <p>somil is a healthy person in their own mindset 
+           it wants to be fit not to be muscular yes it is a fact that 
+           </p>
+         <div class="btn-group">
+           <button class="common-button">Get started</button>
+           <button class="common-button-normal">How It Works?</button>
+         </div>
+       </div>
+       <div class="left-section">
+         <img src="section4.png" alt="fitnessapp">
+       </div>
+    </section>
+     <!--------------------------main fifth section------------------------------>
+    <section class="common-section" id="fifth-sec">
+         <div class="left-section">
+         <img src="section5.png" alt="fitnessapp">
+       </div>
+       <div class="right-section">
+         <h2>Your Daily Healthy App</h2>
+         <p>somil is a healthy person in their own mindset 
+           it wants to be fit not to be muscular yes it is a fact that 
+           </p>
+         <div class="btn-group">
+           <button class="common-button">Get started</button>
+           <button class="common-button-normal">How It Works?</button>
+         </div>
+       </div>
+    </section>
+    <!--------------------------main sixth footer section------------------------------>
+    <footer>
+       <div class="logo-div">
+         <img src="tglogopl.png" alt="logo">
+         <p>&copy; somil is a good person</p>
+       </div>
+       <div class=="div-menu" id="divs-menu">
+         <div class="div-1-menu">
+           <h4>Home</h4>
+           <a href="#"><li>contact</li></a>
+           <a href="#"><li>contact</li></a>
+         </div>
+         <div class="div-2-menu">
+           <h4>Services</h4>
+           <a href="#"><li>contact</li></a>
+           <a href="#"><li>contact</li></a>
+         </div>
+         <div class="div-3-menu">
+           <h4>Contact</h4>
+           <a href="#"><li>contact</li></a>
+           <a href="#"><li>contact</li></a>
+         </div>
+       </div>
+    </footer>
+  <script type="text/javascript">
+
+     function toggleshow(){
+    let butn = document.getElementById('butn');
+   document.getElementById('con').style.display = "block";
+}
+ 
+     let cl = document.getElementById('con');
+     let cr = document.getElementById('closecross');
+     cr.addEventListener('mouseup', function close(){
+      document.getElementById('con').style.display = "none";
+  });
+ 
+
+     let btn1 = document.getElementById('btn1');
+     btn1.addEventListener('mouseup', function open(){
+      document.getElementById('logc').style.display = "block";
+  });
+
+      let cr1 = document.getElementById('closecross1');
+      cr1.addEventListener('mouseup', function close(){
+      document.getElementById('logc').style.display = "none";
+  });  
+
+    
+    
+    const form = document.getElementById('frm');
+    const username = document.getElementById('nm');
+    const email = document.getElementById('em');
+    const password = document.getElementById('psw');
+    const cpassword = document.getElementById('pswr');
+
+    
+    form.addEventListener('submit', (event) => {
+       event.preventDefault();
+   });
+
+       // validate function
+       
+       const validate = () => {
+    const form = frm.value.trim();
+    const username = nm.value.trim();
+    const email = em.value.trim();
+    const password = psw.value.trim();
+    const cpassword = pswr.value.trim();
+      }
+
+    
+
+  </script>
+  </body>
+</html>
